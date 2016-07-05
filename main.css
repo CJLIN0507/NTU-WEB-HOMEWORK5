@@ -52,27 +52,39 @@ body{
   box-sizing: border-box;
   width: 25%;
   display: inline-block;
+    position: relative;
 }
+
 .nava>li:last-child{
   border-right: 1px solid #ddd;
 }
-.submenu{
+.submenu {
+  width: 200px;
+  position: absolute;
+  left: -1px; 
+  top: 100%; 
   background: #eee;
   padding: 0px;
   border: 1px solid #ddd;
   border-radius: 5px;
-    display: none;
+  display: none;
 }
+
 .submenu li{
   padding: .5em 15px;
   color: black;
   cursor: pointer;
   list-style-type:none;
 }
-.submenu li:hover{
-  color: gray;
-  background: white;
+
+.nava>li:hover .submenu{
+    display: block;
 }
+
+.submenu li:hover
+{ color: gray;
+    background: white;
+ display: block; }
 
 
 .absolute {
